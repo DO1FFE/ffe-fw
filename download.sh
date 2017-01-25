@@ -19,6 +19,15 @@ case $? in
 	1) echo "Keine Verbindung zum Server" ; exit ;;
 	2) echo "Keine Verbindung zum Server" ; exit ;;
 esac
+
+# Wenn firmware-Verzeichnis schon existiert, löschen
+if [ -d "firmware" ]; then
+  rm -f firmware
+fi
+# firmware-Verzeichnis erstellen wenn es nicht existiert
+if [ ! -d "firmware" ]; then
+  mkdir firmware
+fi
 # Einzelne Dateinamen aus Firmware.txt holen
 for LINK in $(cat Firmware.txt)
 do
