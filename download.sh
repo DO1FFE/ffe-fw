@@ -2,10 +2,13 @@
 #
 # <c> Leon Hellmann 09.02.2016
 # Auto Downloader für die Essener Firmware
-# In der Firmware.txt Datei könnt ihr bestimmen welche Downloads ihr haben möchtet in dem ihr die Downloads die ihr nicht braucht aus der Datei
-# Löscht
+# In der Firmware.txt Datei könnt ihr bestimmen welche Downloads ihr haben möchtet
+# indem ihr die Downloads die ihr nicht braucht aus der Datei löscht.
+#
+# Aktuelle FW Version gluon-ffe-2.2.1-1
+#
 clear
-# Die URL von der Gedownloadet werden soll. An diese wird hinterher der Dateiname abgehangen
+# Die URL von der gedownloadet werden soll. An diese wird hinterher der Dateiname abgehangen
 URL=https://images.freifunk-essen.de/stable/
 BISJ=1
 # Überprüfung ob der Server überhaupt erreichbar ist.
