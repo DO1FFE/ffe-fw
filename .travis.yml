@@ -1,3 +1,2 @@
 language: bash
-sudo: required
 script: ./download.sh
