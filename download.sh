@@ -22,7 +22,7 @@ esac
 
 # Wenn firmware-Verzeichnis schon existiert, löschen
 if [ -d "firmware" ]; then
-  rm -f firmware
+  rm -rf firmware
 fi
 # firmware-Verzeichnis erstellen wenn es nicht existiert
 if [ ! -d "firmware" ]; then
@@ -40,8 +40,8 @@ do
 	BISJ=$(($BISJ + 1))
 # Wer eine Ausgabe haben möchte die einem bei jedem Download den genauen Link ausgibt der muss die
 # nächste Zeile auskommentieren und die übernächste einkommentieren.
-#	echo "$URL$LINK"
-	echo "$LINK"
+	echo "$URL$LINK"
+#	echo "$LINK"
 # Download der Datei und Speicherung in Ordner firmware/
 	wget -N -P firmware/  $URL$LINK >/dev/null 2>&1
 done
